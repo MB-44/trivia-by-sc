@@ -8,7 +8,6 @@ export default function Question2() {
     localStorage.setItem("skinType", value);
 
     router.push("/questions/3");
-    // alert("Skin type saved: " + value + ". Next page or results would be here.");
   };
 
   const handleBack = () => {

@@ -2,43 +2,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 32px;
+  justify-content: center; 
+  padding: 40px 20px;
+  background-color: #fafafa;
   min-height: 100vh;
-  padding: 80px;
-  text-align: center;
-  font-family: sans-serif;
+  text-align: center; 
 }
 
 .title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 16px;
+  color: #333;
 }
 
 .subtitle {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
+  color: #666;
 }
 
 .options {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
-  width: 100%;
-  max-width: 400px;
+  margin-bottom: 24px;
 }
 
 .optionButton {
-  padding: 16px 24px;
-  border: 2px solid #a19f9f;
-  background-color: #d3d1d1;
+  padding: 12px 24px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  color: black;
   font-size: 16px;
-  font-weight: 500;
-  color: #3f3d3d;
-  border-radius: 4px;
   cursor: pointer;
-  text-align: center;
+  transition: background-color 0.2s ease;
 }
 
 .optionButton:hover {
@@ -50,15 +50,67 @@
 }
 
 .backButton {
-  padding: 16px 24px;
+  background-color: transparent;
   border: none;
+  color: #38393a;
   font-size: 16px;
   cursor: pointer;
-  color: #3f3d3d;
-  background-color: #c4c2c2;
-  border-radius: 4px;
+  padding: 8px;
+  transition: color 0.2s ease;
 }
 
 .backButton:hover {
-  background-color: #444;
+  color: #d28f13;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 24px;
+}
+
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.productTitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.productPrice {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.addToCartButton {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #333;
 }
