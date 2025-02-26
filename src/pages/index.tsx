@@ -21,7 +21,7 @@ export default function Home() {
       >
         <main className={styles.main}>
           <h1 className={styles.title}>Build Your Spa Ceylon Regime</h1>
-          <p className={styles.paragraph}>Not sure which products are right for you? We'll help you find the right products for your skin with your very own bespoke Medik8 skincare regime – all in under 60 seconds! You're only 8 clicks away...</p>
+          <p className={styles.paragraph}>Not sure which Skincare products are right for you? <br />Check out this by touching Let's get started button</p>
           <button className={styles.startButton} onClick={handleButton}>Let's Get Started</button>
           {/* <div className={styles.ctas}></div> */}
         </main>
