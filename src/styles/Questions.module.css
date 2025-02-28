@@ -32,30 +32,6 @@
   font-style: normal;
 }
 
-.header {
-  width: 100%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cartButton {
-  padding: 8px 16px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
-}
-
-.cartButton:hover {
-  background-color: #333;
-}
-
 .title {
   font-size: 28px;
   font-weight: bold;
@@ -87,11 +63,12 @@
   color: black;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .optionButton:hover {
   background-color: #f2f2f2;
+  transform: scale(1.05);
 }
 
 .navigation {
@@ -107,17 +84,18 @@
   font-size: 16px;
   cursor: pointer;
   padding: 8px;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .backButton:hover {
   color: #d28f13;
+  transform: scale(1.05);
 }
 
 .productsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
   width: 100%;
   max-width: 1200px;
   margin-bottom: 24px;
@@ -131,11 +109,23 @@
   background-color: #fff;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.productCard:hover {
+  transform: scale(1.02);
 }
 
 .productImage {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   margin-bottom: 12px;
   border-radius: 4px;
 }
@@ -152,7 +142,7 @@
   color: #555;
 }
 
-.addToCartButton {
+.infoButton {
   padding: 10px 20px;
   background-color: #000;
   color: #fff;
@@ -160,36 +150,12 @@
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.addToCartButton:hover {
+.infoButton:hover {
   background-color: #333;
-}
-
-.quantityControls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.decrementButton,
-.incrementButton {
-  padding: 6px 12px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.2s ease;
-}
-
-.decrementButton:hover,
-.incrementButton:hover {
-  background-color: #333;
+  transform: scale(1.05);
 }
 
 .startQuizButtonContainer {
@@ -224,6 +190,13 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popupFadeIn 0.3s forwards;
+}
+
+.cartModal.closing {
+  animation: popupFadeOut 0.3s forwards;
 }
 
 .cartContent {
@@ -232,8 +205,15 @@
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   position: relative;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: popupSlideIn 0.3s forwards;
+}
+
+.cartContent.closing {
+  animation: popupSlideOut 0.3s forwards;
 }
 
 .closeCartButton {
@@ -244,44 +224,51 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: red; 
+  transition: transform 0.2s ease;
 }
 
-.cartItem {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
+.closeCartButton:hover {
+  transform: scale(1.2);
 }
 
-.cartItemImage {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 12px;
+
+@keyframes popupFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.cartItemDetails {
-  flex: 1;
+@keyframes popupFadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
 }
 
-.cartItemTitle {
+@keyframes popupSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupSlideOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.productDescription {
   font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  color: #333;
-}
-
-.cartItemQuantity,
-.cartItemPrice,
-.cartItemTotal {
-  margin: 4px 0;
-  font-size: 14px;
   color: #555;
+  margin-bottom: 12px;
 }
 
-.cartTotal {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: right;
-  margin-top: 16px;
+.productIngredients {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
 }

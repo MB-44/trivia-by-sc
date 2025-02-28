@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <div className={`${styles.page}`}>
         <main className={styles.main}>
-          <h1 className={styles.title}>Build Your Spa Ceylon Regime</h1>
+          <h1 className={styles.title}>Build Your Spa Ceylon</h1>
           <p className={styles.subtitle}>Not sure which Skincare products are right for you? <br />Check out this by touching Let's get started button</p>
           <button className={styles.optionButton} onClick={handleButton}>Let's Get Started</button>
         </main>
