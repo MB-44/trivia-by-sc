@@ -179,6 +179,22 @@
   background-color: #383839;
 }
 
+.loadingSpinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #38393a;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .cartModal {
   position: fixed;
   top: 0;
@@ -224,14 +240,13 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: red; 
+  color: red;
   transition: transform 0.2s ease;
 }
 
 .closeCartButton:hover {
   transform: scale(1.2);
 }
-
 
 @keyframes popupFadeIn {
   to {

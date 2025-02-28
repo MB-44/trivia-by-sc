@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import styles from "@/styles/Questions.module.css";
 
 const subChoicesMap: Record<string, string[]> = {
@@ -23,7 +24,7 @@ const productsData: Record<
     title: string;
     price: string;
     ingredients: string;
-    description?: string;
+    description: string;
   }[]
 > = {
   "Oil Control & Balance": [
@@ -129,73 +130,84 @@ const productsData: Record<
       id: "10",
       image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Eye_Zone_-_Day_Night_Treatment_Concentrate_-_20ml_-_Spa_Ceylon_Sri_Lanka-4365011.jpg",
       title: "Sal & Saffron - Vitamin E Rich - Eye Zone - Day & Night Treatment Concentrate - 20ml",
-      price: "5,200LKR",
+      price: "5200.00 LKR",
       ingredients: "Sal, Saffron, Vitamin E",
-      description: "blah blah"
+      description:
+        "A concentrated treatment for the eye area, reducing puffiness and dark circles."
     },
-    { id: "11", 
-      image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Glow_Activating_Day_Facial_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4365035.jpg", 
-      title: "Sal & Saffron - Vitamin E Rich - Glow Activating Day Facial Protector - 50g", 
-      price: "5,900 LKR",
+    {
+      id: "11",
+      image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Glow_Activating_Day_Facial_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4365035.jpg",
+      title: "Sal & Saffron - Vitamin E Rich - Glow Activating Day Facial Protector - 50g",
+      price: "5900.00 LKR",
       ingredients: "Sal, Saffron, Vitamin E",
-      description: "blah blah"
+      description:
+        "A day facial protector that enhances skin glow while keeping it hydrated."
     },
-    { id: "12", 
-      image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Ultra-Hydrating_Facial_Treatment_Gel_-_60ml_-_Spa_Ceylon_Sri_Lanka-4365048.jpg", 
-      title: "Sal & Saffron - Vitamin E Rich - Ultra-Hydrating Facial Treatment Gel - 60ml", 
-      price: "5,900 LKR",
-      ingredients: "Sal, Saffron, Vitamin E",
-      description: "blah blah"
+    {
+      id: "12",
+      image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Ultra-Hydrating_Facial_Treatment_Gel_-_60ml_-_Spa_Ceylon_Sri_Lanka-4365048.jpg",
+      title: "Sal & Saffron - Vitamin E Rich - Ultra-Hydrating Facial Treatment Gel - 60ml",
+      price: "5900.00 LKR",
+      ingredients: "Sal, Saffron, Hyaluronic Acid",
+      description:
+        "A treatment gel that delivers deep hydration and rejuvenates the skin."
     },
   ],
   "Calm & Soothed": [
-    { 
-      id: "13", 
-      image: "/product-img/Lotus_Rambutan_-_Face_Care_Discovery_Set_-_Spa_Ceylon_Sri_Lanka-4362866.png", 
-      title: "Lotus & Rambutan - Face Care Discovery Set", 
-      price: "6,900 LKR",
-      ingredients: "Lotus, Rambutan",
-      description: "blah blah" 
+    {
+      id: "13",
+      image: "/product-img/Lotus_Rambutan_-_Face_Care_Discovery_Set_-_Spa_Ceylon_Sri_Lanka-4362866.png",
+      title: "Lotus & Rambutan - Face Care Discovery Set",
+      price: "6900.00 LKR",
+      ingredients: "Lotus, Rambutan, Herbal Extracts",
+      description:
+        "A discovery set ideal for calming sensitive skin and reducing irritation."
     },
-    { 
-      id: "14", 
-      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B_Plus_Gentle_Face_Exfoliating_Masque_-_100g_-_Spa_Ceylon_Sri_Lanka-4362770.jpg", 
-      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B Plus Gentle Face Exfoliating Masque - 100g", 
-      price: "5,900 LKR",
+    {
+      id: "14",
+      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B_Plus_Gentle_Face_Exfoliating_Masque_-_100g_-_Spa_Ceylon_Sri_Lanka-4362770.jpg",
+      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B Plus Gentle Face Exfoliating Masque - 100g",
+      price: "5900.00 LKR",
       ingredients: "Lotus, Rambutan, Vitamin B",
-      description: "blah blah",
+      description:
+        "A gentle exfoliating masque that refreshes and soothes the skin."
     },
-    { 
-      id: "15", 
-      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Day_Facial_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4362853.jpg", 
-      title: "Lotus & Rambutan - Active Cell Extract Vitamin B12 Day Facial Protector - 50g", 
-      price: "5,900 LKR",
+    {
+      id: "15",
+      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Day_Facial_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4362853.jpg",
+      title: "Lotus & Rambutan - Active Cell Extract Vitamin B12 Day Facial Protector - 50g",
+      price: "5900.00 LKR",
       ingredients: "Lotus, Rambutan, Vitamin B12",
-      description: "blah blah",
+      description:
+        "A day facial protector that helps maintain a calm and balanced complexion."
     },
-    { 
-      id: "16", 
-      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Ultra-Hydrating_Day_Night_Treatment_50ml_-_Spa_Ceylon_Sri_Lanka-4362822.jpg", 
-      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Ultra-Hydrating Day & Night Treatment 50ml", 
-      price: "5,900 LKR",
+    {
+      id: "16",
+      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Ultra-Hydrating_Day_Night_Treatment_50ml_-_Spa_Ceylon_Sri_Lanka-4362822.jpg",
+      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Ultra-Hydrating Day & Night Treatment 50ml",
+      price: "5900.00 LKR",
       ingredients: "Lotus, Rambutan, Vitamin B12",
-      description: "blah blah"
+      description:
+        "A versatile treatment providing hydration around the clock."
     },
-    { 
-      id: "17", 
-      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Face_Treatment_Milk_Serum_-_30ml_-_Spa_Ceylon_Sri_Lanka-4362798.jpg", 
-      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Face Treatment Milk Serum - 30ml", 
-      price: "5,900 LKR",
+    {
+      id: "17",
+      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_Face_Treatment_Milk_Serum_-_30ml_-_Spa_Ceylon_Sri_Lanka-4362798.jpg",
+      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Face Treatment Milk Serum - 30ml",
+      price: "5900.00 LKR",
       ingredients: "Lotus, Rambutan, Vitamin B12",
-      description: "blah blah"
+      description:
+        "A milk serum that nourishes the skin with gentle, effective ingredients."
     },
-    { 
-      id: "18", 
-      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_-_Facial_Cleansing_Foam_100ml_-_Spa_Ceylon_Sri_Lanka-4362786.jpg", 
-      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 - Facial Cleansing Foam 100ml", 
-      price: "4,900 LKR",
+    {
+      id: "18",
+      image: "/product-img/Lotus_Rambutan_-_Active_Cell_Extract_Vitamin_B12_-_Facial_Cleansing_Foam_100ml_-_Spa_Ceylon_Sri_Lanka-4362786.jpg",
+      title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 - Facial Cleansing Foam 100ml",
+      price: "4900.00 LKR",
       ingredients: "Lotus, Rambutan, Vitamin B12",
-      description: "blah blah"
+      description:
+        "A cleansing foam that removes impurities while maintaining skin balance."
     },
   ],
 };
@@ -204,6 +216,7 @@ export default function Question3() {
   const router = useRouter();
   const [skinType, setSkinType] = useState<string | null>(null);
   const [selectedSubChoice, setSelectedSubChoice] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showInfo, setShowInfo] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
@@ -215,6 +228,16 @@ export default function Question3() {
       setSkinType(storedSkinType);
     }
   }, [router]);
+
+  useEffect(() => {
+    if (selectedSubChoice) {
+      setIsLoading(true);
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [selectedSubChoice]);
 
   if (!selectedSubChoice) {
     const subChoices = subChoicesMap[skinType!] || [];
@@ -244,6 +267,20 @@ export default function Question3() {
             ← Back
           </button>
         </div>
+      </div>
+    );
+  }
+
+  if (isLoading) {
+    return (
+      <div className={styles.page}>
+        <h1 className={styles.title}>Loading Products...</h1>
+        <DotLottieReact
+          src="https://lottie.host/11d7d803-7074-46ce-877f-e9ca27e221e7/RtaoFKL2PY.lottie"
+          loop
+          autoplay
+          style={{ width: "300px", height: "300px", marginTop: "20px" }}
+        />
       </div>
     );
   }
