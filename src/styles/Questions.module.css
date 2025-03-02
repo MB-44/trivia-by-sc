@@ -48,7 +48,8 @@
 .options {
   font-family: "TrajanProBold";
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 16px;
   margin-bottom: 24px;

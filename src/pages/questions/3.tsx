@@ -5,15 +5,30 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import styles from "@/styles/Questions.module.css";
 
 const subChoicesMap: Record<string, string[]> = {
-  "Oily Skin": ["Oil Control & Balance", "Skin Repair & Glow"],
-  "Dry & Dull Skin": ["Hydrated and Glowing", "Moisturized"],
-  "Sensitive Skin": ["Calm & Soothed"],
-  Normal: ["Bright", "Hydrated", "Youthful"],
+  "Oily Skin": [
+    "Oil Control & Balance", 
+    "Skin Repair & Glow"
+  ],
+  "Dry & Dull Skin": [
+    "Hydrated", 
+    "Glowing and Moisturized"
+  ],
+  "Sensitive Skin": [
+    "Calm & Soothed"
+  ],
+  "Normal": [
+    "Bright", 
+    "Hydrated", 
+    "Youthful"
+  ],
   "Acne-Prone": [
     "Clear & Acne-free (Active acne)",
     "Problem Free skin (occasional acne)",
   ],
-  Ageing: ["Maintain youthful skin", "Tighter & even skin tone"],
+  "Ageing": [
+    "Maintain youthful skin", 
+    "Tighter & even skin tone"
+  ],
 };
 
 const productsData: Record<
@@ -35,7 +50,7 @@ const productsData: Record<
       title:
         "Skin Balance - Moringa Herb Discolouration Treatment Serum 30ml (For Men)",
       price: "4900.00 LKR",
-      ingredients: "Moringa, Herbal Extracts, Vitamins",
+      ingredients: "Aloe Vera, Licorice, Moringa, Watercress, Ceylon Tea",
       description:
         "A targeted serum designed to control excess oil and reduce discolouration.",
     },
@@ -45,17 +60,16 @@ const productsData: Record<
         "/product-img/Skin_Balance_-_Moringa_Herb_Clarifying_Clay_Masque_100g_-_Spa_Ceylon_Sri_Lanka-4365580.jpg",
       title: "Skin Balance - Moringa Herb Clarifying Clay Masque 100g",
       price: "5900.00 LKR",
-      ingredients: "Moringa, Clay, Herbal Extracts",
+      ingredients: "Aloe Vera,	Licorice,	Calendula,	Arnica,	Moringa",
       description:
         "A clarifying masque that helps to balance and refine the skin's texture.",
     },
     {
       id: "3",
-      image:
-        "/product-img/Neem_Tea_Tree_-_Mattifying_All_Day_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4363284.jpg",
+      image: "/product-img/Neem_Tea_Tree_-_Mattifying_All_Day_Protector_-_50g_-_Spa_Ceylon_Sri_Lanka-4363284.jpg",
       title: "Neem & Tea Tree - Mattifying All Day Protector - 50g",
       price: "5200.00 LKR",
-      ingredients: "Neem, Tea Tree, Natural Oils",
+      ingredients: "Neem,	Peppermint,	Tea Tree,	Arnica",
       description:
         "A lightweight protector that mattifies and shields your skin throughout the day.",
     },
@@ -72,8 +86,7 @@ const productsData: Record<
     },
     {
       id: "5",
-      image:
-        "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Deep_Cleansing_Facial_Balm_100ml_-_Spa_Ceylon_Sri_Lanka-4366288.jpg",
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Deep_Cleansing_Facial_Balm_100ml_-_Spa_Ceylon_Sri_Lanka-4366288.jpg",
       title:
         "True Turmeric - Vitamin C Glow - Deep Cleansing Facial Balm 100ml",
       price: "5200.00 LKR",
@@ -104,7 +117,7 @@ const productsData: Record<
         "An all-day protector that nourishes and renews for a lasting glow.",
     },
   ],
-  "Hydrated and Glowing": [
+  "Hydrated": [
     {
       id: "8",
       image: "/product-img/Best-Oil-Cleanser.png",
@@ -125,7 +138,7 @@ const productsData: Record<
         "A soothing serum that calms and hydrates skin for a radiant finish.",
     },
   ],
-  "Moisturized": [
+  "Glowing and Moisturized": [
     {
       id: "10",
       image: "/product-img/Sal_Saffron_-_Vitamin_E_Rich_-_Eye_Zone_-_Day_Night_Treatment_Concentrate_-_20ml_-_Spa_Ceylon_Sri_Lanka-4365011.jpg",
@@ -210,6 +223,115 @@ const productsData: Record<
         "A cleansing foam that removes impurities while maintaining skin balance."
     },
   ],
+  "Bright": [
+    {
+      id: "19",
+      image: "/product-img/true_turmeric_-_serum_1.jpg",
+      title: "True Turmeric - Vitamin C Glow - Renewing Treatment Serum 30ml",
+      price: "5600.00 LKR",
+      ingredients: "Turmeric, Almond, Moringa, Rice Bran, Marigold",
+      description: "A powerful overnight repair treatment infused with Ayurveda WonderHerbs & anti-oxidant, healing & calming Turmeric to help minimise dark patches, take-off dullness & control imperfections. Infused with an advanced natural pro-biotic complex to help rebalance skin, fortify natural defences & promote overall skin wellness. Aloe Vera, Witch Hazel & Marigold help hydrate & refresh skin, while Almond, Rice Bran, Moringa & Licorice combine to help minimise dark spots, even-out skin tone & boost visible youthfulness. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise & renew skin, adding a clear natural glow."
+    },
+    {
+      id: "20",
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Deep_Cleansing_Facial_Balm_100ml_-_Spa_Ceylon_Sri_Lanka-4366288.jpg", 
+      title: "True Turmeric - Vitamin C Glow - Deep Cleansing Facial Balm 100ml",
+      price: "5200.00 LKR",
+      ingredients: "Tumeric, Virigin Coconut, Sweet Almond",
+      description: "Deep Cleansing & Make-up Removal: Apply & massage all over face & neck. Wipe off with cotton / warm wet towel & rinse thoroughly. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+    },
+    { 
+      id: "21", 
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Exfoliating_Clay_Facial_Masque_100g_-_Spa_Ceylon_Sri_Lanka-4366302.jpg", 
+      title: "True Turmeric - Vitamin C Glow - Exfoliating Clay Facial Masque 100g", 
+      price: "6,950 LKR",
+      ingredients: "Turmeric, Kokum, Bearberry, Licorice",
+      description: "Deep cleanse skin & apply thick layer, all over face & neck, avoiding eye area. Leave for 10 minutes. Wet skin & lightly massage with fingertips, using gentle circular motions. Wash off.Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+    },
+    { 
+      id: "22", 
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Renewing_All-Day_Protector_50g_-_Spa_Ceylon_Sri_Lanka-4366371.jpg", 
+      title: "True Turmeric - Vitamin C Glow - Renewing All-Day Protector 50g", 
+      price: "5,400 LKR",
+      ingredients: "Turmeric, Rice Bran, Licorice, Watercress",
+      description: "Cleanse & tone skin. Using fingertips, apply lightly all over face & neck. Avoid eye area. Blend into skin & leave on. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+    },
+    { 
+      id: "23", 
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Facial_Cleansing_Foam_150ml_-_Spa_Ceylon_Sri_Lanka-4366337.jpg", 
+      title: "True Turmeric - Vitamin C Glow - Facial Cleansing Foam 150ml", 
+      price: "4,800 LKR",
+      ingredients: "Turmeric, Licorice, Moringa, Virgin Coconut, Watercress",
+      description: "A soft-foaming formula infused with True Turmeric & powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin wellness & revitalise skin. Turmeric combines with Aloe Vera, Licorice, Green Tea & Watercress to help inhibit formation of skin darkening cells & remove sun-tan. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise skin & promote a brighter natural glow. 150ml TUBE A soft-foaming formula infused with True Turmeric & naturally Vitamin-C rich powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin health & revitalise skin. Turmeric combined with Rosehip, Pineapple Enzymes & Aloe Vera brighten skin & enhance natural glow."
+    },
+    { 
+      id: "23", 
+      image: "/product-img/True_Turmeric_-_Gold_Facial_Masque_-Vitamin_C_Glow_Brightening_Treatment_-_Spa_Ceylon_Sri_Lanka-4366241.jpg", 
+      title: "True Turmeric - Gold Facial Masque -Vitamin C Glow Brightening Treatment", 
+      price: "1,050 LKR",
+      ingredients: "",
+      description: ""
+    },
+    { 
+      id: "23", 
+      image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Anti-Pollution_Gel_Facial_Masque_60ml_-_Spa_Ceylon_Sri_Lanka-4366272.jpg", 
+      title: "True Turmeric - Vitamin C Glow - Anti-Pollution Gel Facial Masque 60ml",
+      price: "5,550 LKR",
+      ingredients: "",
+      description: ""
+    },
+  ],
+  "Youthful": [
+    { id: "15", 
+      image: "/product-img/White_Rice_-_Nourishing_All-Day_Protector_50g_-_Spa_Ceylon_Sri_Lanka-4367516.jpg",
+      title: "White Rice - Nourishing All-Day Protector 50g", 
+      price: "5,100 LKR",
+      ingredients: "",
+      description: "",
+    },
+  ],
+  "Clear & Acne-free (Active acne)": [
+    { 
+      id: "17", 
+      image: "/images/clear1.jpg", 
+      title: "Acne Control Gel", 
+      price: "$25.99",
+      ingredients: "",
+      description: "",
+    },
+    { 
+      id: "18", 
+      image: "/images/clear2.jpg", 
+      title: "Purifying Cleanser", 
+      price: "$32.99",
+      ingredients: "",
+      description: "",
+    },
+  ],
+  "Problem Free skin (occasional acne)": [
+    { 
+      id: "19", 
+      image: "/product-img/Skin_Balance_-_Moringa_Herb_Clarifying_Clay_Masque_100g_-_Spa_Ceylon_Sri_Lanka-4365580.jpg", 
+      title: "Skin Balance - Moringa Herb Clarifying Clay Masque 100g", 
+      price: "5,900 LKR",
+      ingredients : "",
+      description: ""
+    },
+    { 
+      id: "20", 
+      image: "/product-img/Skin_Balance_-_Moringa_Neem_-_Clarifying_Clay_Facial_Exfoliator_100g_-_Spa_Ceylon_Sri_Lanka-4365571.jpg", 
+      title: "Skin Balance - Moringa & Neem - Clarifying Clay Facial Exfoliator 100g", 
+      price: "5,200 LKR",
+      ingredients: "",
+      description: "", 
+    },
+  ],
+  "Maintain youthful skin" : [
+
+  ],
+  "Tighter & even skin tone": [
+
+  ],
 };
 
 export default function Question3() {
@@ -262,7 +384,7 @@ export default function Question3() {
         <div className={styles.navigation}>
           <button
             className={styles.backButton}
-            onClick={() => router.push("/questions/2")}
+            onClick={() => router.push("../../")}
           >
             ← Back
           </button>
@@ -275,12 +397,12 @@ export default function Question3() {
     return (
       <div className={styles.page}>
         <h1 className={styles.title}>Loading Products...</h1>
-        <DotLottieReact
-          src="https://lottie.host/11d7d803-7074-46ce-877f-e9ca27e221e7/RtaoFKL2PY.lottie"
-          loop
-          autoplay
-          style={{ width: "300px", height: "300px", marginTop: "20px" }}
-        />
+        <DotLottieReact 
+          src="https://lottie.host/d5995d52-aa30-4b3f-b4ac-d71aa7edd195/nAwDsObOT4.lottie" 
+          speed={1} 
+          style={{width: "300px", height: "300px", margin: "0 auto"}}
+          loop autoplay
+          />
       </div>
     );
   }
