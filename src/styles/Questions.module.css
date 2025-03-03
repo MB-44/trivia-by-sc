@@ -1,4 +1,4 @@
-.page {
+/* .page {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,11 +11,23 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "TrajanProRegular";
+  font-family: "Goudy Old Style";
+  
+  /* transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center center; *
+} */
 
-  transform: translate(-50%, -50%) rotate(90deg);
-  transform-origin: center center;
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Goudy Old Style";
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
+
 
 @font-face {
   font-family: "TrajanProBold";
@@ -45,8 +57,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Goudy Old Style";
+  src: url("/font/GOUDOS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .title {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 25px;
   color: #333;
@@ -59,7 +78,7 @@
 }
 
 .options {
-  font-family: "TrajanProRegular";
+  font-family: "Goudy Old Style";
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -68,13 +87,13 @@
 }
 
 .optionButton {
-  font-family: "TrajanProRegular";
+  font-family: "Goudy Old Style";  
   padding: 12px 24px;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 8px;
   color: black;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -85,12 +104,12 @@
 }
 
 .navigation {
-  font-family: "TrajanProBold";
+  font-family: "Goudy Old Style";  
   margin-top: 24px;
 }
 
 .backButton {
-  font-family: "TrajanProBold";
+  font-family: "Goudy Old Style";  
   background-color: transparent;
   border: none;
   color: #38393a;
@@ -151,14 +170,14 @@
 }
 
 .productTitle {
-  font-family: "TrajanProRegular";
+  font-family: "Goudy Old Style";
   font-size: 18px;
   margin-bottom: 8px;
   color: #333;
 }
 
 .productPrice {
-  font-family: "TrajanPro";
+  font-family: "Goudy Old Style";
   font-size: 16px;
   margin-bottom: 12px;
   color: #555;
@@ -189,7 +208,7 @@
   background-color: #f8c85f;
   color: #242323;
   border: none;
-  font-family: "TrajanProBold";
+  font-family: "Goudy Old Style";  
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -346,7 +365,7 @@
 
 .ingredientDescription {
   font-size: 14px;
-  font-family: "TrajanProExtraLight";
+  font-family: "Goudy Old Style";
   color: #555;
   font-weight: 800;
 }
