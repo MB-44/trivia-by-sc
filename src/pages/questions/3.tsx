@@ -38,7 +38,7 @@ const productsData: Record<
         "/product-img/Skin_Balance_-_Moringa_Herb_Discolouration_Treatment_Serum_30ml_-_Spa_Ceylon_Sri_Lanka-4365603.jpg",
       title:
         "Skin Balance - Moringa Herb Discolouration Treatment Serum 30ml (For Men)",
-      price: "4900.00 LKR",
+      price: "4,900.00 LKR",
       description:
         "An advanced skin resurfacing treatment infused with deep-penetrating Ayurveda Wonderherbs. Moringa & Natural pro-biotics help strengthen skin Balance & minimise UV-induced sun damage. For blemished, blotchy, uneven skin & problem skin that seeks soothing Balance, freshness & new radiance.",
       ingredientDetails: [
@@ -76,7 +76,7 @@ const productsData: Record<
       title: "Skin Balance - Moringa Herb Clarifying Clay Masque 100g",
       price: "5900.00 LKR",
       description:
-        "A clarifying masque that helps to balance and refine the skin's texture.",
+        "An intense soothing, purifying &amp; refreshing formula to help control problem skin &amp; restore natural skin balance.",
       ingredientDetails: [
         {
           name: "Aloe Vera",
@@ -112,7 +112,7 @@ const productsData: Record<
       title: "Neem & Tea Tree - Mattifying All Day Protector - 50g",
       price: "5200.00 LKR",
       description:
-        "A lightweight protector that mattifies and shields your skin throughout the day.",
+        "An instantly-absorbent non-oily formula to help keep skin looking matte &amp; oil-free for longer.",
       ingredientDetails: [
         {
           name: "Neem",
@@ -144,7 +144,7 @@ const productsData: Record<
       title: "True Turmeric - Vitamin C Glow - Renewing Treatment Serum 30ml",
       price: "5600.00 LKR",
       description:
-        "A renewing serum that promotes a glowing complexion while repairing skin.",
+        "A powerful overnight repair treatment infused with Ayurveda Wonder herbs &amp; anti-oxidant, healing &amp; calming Turmeric to help minimize dark patches, take-off dullness &amp; control imperfections.",
       ingredientDetails: [
           {
             name: "Turmeric",
@@ -181,7 +181,7 @@ const productsData: Record<
         "True Turmeric - Vitamin C Glow - Deep Cleansing Facial Balm 100ml",
       price: "5200.00 LKR",
       description:
-        "A deep cleansing balm that gently removes impurities while brightening the skin.",
+        "A powerful blend of Ayurveda Wonderherbs infused with anti-oxidant, healing &amp; calming Turmeric to intensely purify &amp; Energise skin. Virgin Coconut &amp; Sweet Almond help instantly deep cleanse the skin, dissolving makeup, daily grime &amp; pollutants.",
       ingredientDetails: [
         {
           name: "Turmeric",
@@ -208,7 +208,7 @@ const productsData: Record<
         "True Turmeric - Vitamin C Glow - Exfoliating Clay Facial Masque 100g",
       price: "6950.00 LKR",
       description:
-        "An exfoliating masque that refines skin texture and enhances radiance.",
+        "A powerful blend of Ayurveda Wonderherbs infused with anti-oxidant, healing &amp; calming Turmeric to intensely purify &amp; Energise skin. Virgin Coconut &amp; Sweet Almond help instantly deep cleanse skin, dissolving makeup, daily grime &amp; pollutants.",
       ingredientDetails: [
         {
           name: "Turmeric",
@@ -240,7 +240,7 @@ const productsData: Record<
         "True Turmeric - Vitamin C Glow - Renewing All-Day Protector 50g",
       price: "5400.00 LKR",
       description:
-        "An all-day protector that nourishes and renews for a lasting glow.",
+        "A fast-absorbent blend of Ayurveda Wonderherbs infused with calming, anti-oxidant &amp; fortifying Turmeric, Rice Bran &amp; Marigold, to help minimise dark patches, take-away dullness &amp; control imperfections.",
       ingredientDetails: [
         {
           name: "Turmeric",
@@ -272,7 +272,7 @@ const productsData: Record<
       title: "Virgin Coconut - Facial Cleansing Oil 100ml",
       price: "4300.00 LKR",
       description:
-        "A gentle cleansing oil that leaves skin hydrated and glowing.",
+        "An extra-gentle purifying formula, blended with pure Virgin Coconut Oil - naturally cold pressed at source from the finest fresh coconuts hand-picked from the lush tropical gardens of Ceylon. Rich in nourishing vitamins &amp; protective anti-oxidants to help protect skin against dryness &amp; improve natural skin balance.",
       ingredientDetails: [
         {
           name: "Aloe Vera",
@@ -313,7 +313,7 @@ const productsData: Record<
       title: "Virgin Coconut - Face & Body Soothing Serum 100ml",
       price: "3900.00 LKR",
       description:
-        "A soothing serum that calms and hydrates skin for a radiant finish.",
+        "A 100% natural serum of pure Virgin Coconut Oil naturally cold pressed at source from the finest fresh coconuts hand-picked from the lush tropical gardens of Ceylon.",
       ingredientDetails: [
         {
           name: "Virgin Coconut",
@@ -345,7 +345,7 @@ const productsData: Record<
       title: "Sal & Saffron - Vitamin E Rich - Eye Zone - Day & Night Treatment Concentrate - 20ml",
       price: "5200.00 LKR",
       description:
-        "A concentrated treatment for the eye area, reducing puffiness and dark circles.",
+        "A powerful targeted treatment infused with nourishing Sal Butter &amp; precious Saffron to help soothe &amp; protect skin around &amp; under the eyes, defending against visible signs of skin aging.",
       ingredientDetails: [
         {
           name: "Saffron",
@@ -375,7 +375,7 @@ const productsData: Record<
       title: "Sal & Saffron - Vitamin E Rich - Glow Activating Day Facial Protector - 50g",
       price: "5900.00 LKR",
       description:
-        "A day facial protector that enhances skin glow while keeping it hydrated.",
+        "A light, fast-absorbent blend of nourishing Sal Butter &amp; precious Saffron, to soothe &amp; control dryness, while keep skin looking fresh &amp; matte throughout the day.",
       ingredientDetails: [
         {
           name: "Saffron",
@@ -400,7 +400,7 @@ const productsData: Record<
       title: "Sal & Saffron - Vitamin E Rich - Ultra-Hydrating Facial Treatment Gel - 60ml",
       price: "5900.00 LKR",
       description:
-        "A treatment gel that delivers deep hydration and rejuvenates the skin.",
+        "A fast-action extra-potent wonder blend infused with nourishing Sal Butter &amp; precious Saffron to instantly deep-hydrate, soothe dryness, minimise appearance of pores &amp; add a more visibly youthful Glow to skin.",
       ingredientDetails: [
         {
           name: "Saffron",
@@ -477,7 +477,7 @@ const productsData: Record<
       title: "Lotus & Rambutan - Active Cell Extract Vitamin B12 Day Facial Protector - 50g",
       price: "5900.00 LKR",
       description:
-        "A day facial protector that helps maintain a calm and balanced complexion.",
+        "A light, fast-absorbent formula to help keep skin fresh &amp; matte through the day. Infused with Lotus Leaf Active Cell Extract, Vitamin B12, Rambutan, Kava Kava, Arnica &amp; Calendula to help soothe skin &amp; calm redness.",
       ingredientDetails: [
         {
           name: "Calendula",
@@ -497,7 +497,7 @@ const productsData: Record<
       title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Ultra-Hydrating Day & Night Treatment 50ml",
       price: "5900.00 LKR",
       description:
-        "A versatile treatment providing hydration around the clock.",
+        "A fast action, extra-potent wonder treatment infused with Lotus Leaf Active Cell Extract, Vitamin B12, Rambutan &amp; Kava Kava to help soothe skin, calm redness &amp; reduce sensation of irritation.",
       ingredientDetails: [
         {
           name: "Calendula",
@@ -517,7 +517,7 @@ const productsData: Record<
       title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 Face Treatment Milk Serum - 30ml",
       price: "5900.00 LKR",
       description:
-        "A milk serum that nourishes the skin with gentle, effective ingredients.",
+        "A powerful overnight repair treatment infused with Lotus Leaf Active Cell Extract, Vitamin B12, Rambutan, Kava Kava, Arnica &amp; Calendula to help soothe skin, calm redness &amp; reduce sensation of irritation.",
       ingredientDetails: [
         {
           name: "Calendula",
@@ -537,7 +537,7 @@ const productsData: Record<
       title: "Lotus & Rambutan - Active Cell Extract + Vitamin B12 - Facial Cleansing Foam 100ml",
       price: "4900.00 LKR",
       description:
-        "A cleansing foam that removes impurities while maintaining skin balance.",
+        "A soft-foaming formula to gently cleanse skin &amp; help fortify delicate natural skin balance. Enriched with a powerful blend of Lotus Leaf Active Cell Extract, Vitamin B12, Rambutan &amp; Kava Kava to help soothe skin &amp; calm redness.",
       ingredientDetails: [
         {
           name: "Calendula",
@@ -672,49 +672,203 @@ const productsData: Record<
       image: "/product-img/true_turmeric_-_serum_1.jpg",
       title: "True Turmeric - Vitamin C Glow - Renewing Treatment Serum 30ml",
       price: "5600.00 LKR",
-      description: "A powerful overnight repair treatment infused with Ayurveda WonderHerbs & anti-oxidant, healing & calming Turmeric to help minimise dark patches, take-off dullness & control imperfections. Infused with an advanced natural pro-biotic complex to help rebalance skin, fortify natural defences & promote overall skin wellness. Aloe Vera, Witch Hazel & Marigold help hydrate & refresh skin, while Almond, Rice Bran, Moringa & Licorice combine to help minimise dark spots, even-out skin tone & boost visible youthfulness. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise & renew skin, adding a clear natural glow."
+      description: "A powerful overnight repair treatment infused with Ayurveda WonderHerbs & anti-oxidant, healing & calming Turmeric to help minimise dark patches, take-off dullness & control imperfections. Infused with an advanced natural pro-biotic complex to help rebalance skin, fortify natural defences & promote overall skin wellness. Aloe Vera, Witch Hazel & Marigold help hydrate & refresh skin, while Almond, Rice Bran, Moringa & Licorice combine to help minimise dark spots, even-out skin tone & boost visible youthfulness. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise & renew skin, adding a clear natural glow.",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Almond",
+          image: "/ingredient-img/Almond.png",
+          description: "Rich in vitamin E, to nourish & soften skin.",
+        },
+        {
+          name: "Moringa",
+          image: "/ingredient-img/Moringa.png",
+          description: "Rich in antibacterial & nourishing properties. Controls problem skin & restores natural balance.",
+        },
+        {
+          name: "Rice Bran",
+          image: "/ingredient-img/Rice-Bran.png",
+          description: "Rich in antioxidants. Nourishes skin & protects skin from environmental damage. Preserve youthful skin.",
+        },
+        {
+          name: "Marigold",
+          image: "/ingredient-img/Marigold.png",
+          description: "Rich in antiseptic and anti-inflammatory properties. Promotes healing & accelerates the regeneration of new cells.",
+        }
+      ]
     },
     {
       id: "20",
       image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Deep_Cleansing_Facial_Balm_100ml_-_Spa_Ceylon_Sri_Lanka-4366288.jpg", 
       title: "True Turmeric - Vitamin C Glow - Deep Cleansing Facial Balm 100ml",
       price: "5200.00 LKR",
-      description: "Deep Cleansing & Make-up Removal: Apply & massage all over face & neck. Wipe off with cotton / warm wet towel & rinse thoroughly. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+      description: "Deep Cleansing & Make-up Removal: Apply & massage all over face & neck. Wipe off with cotton / warm wet towel & rinse thoroughly. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice.",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Virgin Coconut",
+          image: "/ingredient-img/Virgin-Coconut.png",
+          description: "Rich in nourishing fatty acids. Increases collagen production & intensely hydrates.",
+        },
+        {
+          name: "Sweet Almond",
+          image: "/ingredient-img/Sweet-Almond.png",
+          description: "Reduces puffiness & under-eye circles. Treats dry skin & reverses sun damage. Enhances overall skin health.",
+        }
+      ]
     },
     { 
       id: "21", 
       image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Exfoliating_Clay_Facial_Masque_100g_-_Spa_Ceylon_Sri_Lanka-4366302.jpg", 
       title: "True Turmeric - Vitamin C Glow - Exfoliating Clay Facial Masque 100g", 
       price: "6,950 LKR",
-      description: "Deep cleanse skin & apply thick layer, all over face & neck, avoiding eye area. Leave for 10 minutes. Wet skin & lightly massage with fingertips, using gentle circular motions. Wash off.Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+      description: "Deep cleanse skin & apply thick layer, all over face & neck, avoiding eye area. Leave for 10 minutes. Wet skin & lightly massage with fingertips, using gentle circular motions. Wash off.Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice.",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Kokum",
+          image: "/ingredient-img/Kokum.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Soothes & heals inflamed damaged skin.",
+        },
+        {
+          name: "Bearberry",
+          image: "/ingredient-img/Bearberry.png",
+          description: "A natural skin brightener. Evens out skin tones by eliminating age spots & acne scars.",
+        },
+        {
+          name: "Licorice",
+          image: "/ingredient-img/Licorice.png",
+          description: "Rich in anti-inflammatory & anti-microbial properties. Promotes skin brightening & anti-aging benefits.",
+        }
+      ]
     },
     { 
       id: "22", 
       image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Renewing_All-Day_Protector_50g_-_Spa_Ceylon_Sri_Lanka-4366371.jpg", 
       title: "True Turmeric - Vitamin C Glow - Renewing All-Day Protector 50g", 
       price: "5,400 LKR",
-      description: "Cleanse & tone skin. Using fingertips, apply lightly all over face & neck. Avoid eye area. Blend into skin & leave on. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice."
+      description: "Cleanse & tone skin. Using fingertips, apply lightly all over face & neck. Avoid eye area. Blend into skin & leave on. Special care & awareness: In case of discomfort, decrease the duration & frequency of application. If irritation occurs, discontinue use & seek medical advice.",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Licorice",
+          image: "/ingredient-img/Licorice.png",
+          description: "Rich in anti-inflammatory & anti-microbial properties. Promotes skin brightening & anti-aging benefits.",
+        },
+        {
+          name: "Rice Bran",
+          image: "/ingredient-img/Rice-Bran.png",
+          description: "Rich in antioxidants. Nourishes skin & protects skin from environmental damage. Preserve youthful skin.",
+        },
+        {
+          name: "Watercress",
+          image: "/ingredient-img/Watercress.png",
+          description: "Rich in Vitamin C. Increases collagen production & reduces cellulite & wrinkles.",
+        }
+      ]
     },
     { 
       id: "23", 
       image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Facial_Cleansing_Foam_150ml_-_Spa_Ceylon_Sri_Lanka-4366337.jpg", 
       title: "True Turmeric - Vitamin C Glow - Facial Cleansing Foam 150ml", 
       price: "4,800 LKR",
-      description: "A soft-foaming formula infused with True Turmeric & powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin wellness & revitalise skin. Turmeric combines with Aloe Vera, Licorice, Green Tea & Watercress to help inhibit formation of skin darkening cells & remove sun-tan. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise skin & promote a brighter natural glow. 150ml TUBE A soft-foaming formula infused with True Turmeric & naturally Vitamin-C rich powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin health & revitalise skin. Turmeric combined with Rosehip, Pineapple Enzymes & Aloe Vera brighten skin & enhance natural glow."
+      description: "A soft-foaming formula infused with True Turmeric & powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin wellness & revitalise skin. Turmeric combines with Aloe Vera, Licorice, Green Tea & Watercress to help inhibit formation of skin darkening cells & remove sun-tan. Super-charged with natural Vitamin-C rich Rosehip & Pineapple enzymes to help energise skin & promote a brighter natural glow. 150ml TUBE A soft-foaming formula infused with True Turmeric & naturally Vitamin-C rich powerful Ayurveda WonderHerbs to deep cleanse & purify skin, taking away dullness & imperfections. Virgin Coconut, Moringa, Neem, Kokum Butter & natural vitamins help improve overall skin health & revitalise skin. Turmeric combined with Rosehip, Pineapple Enzymes & Aloe Vera brighten skin & enhance natural glow.",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "licorice",
+          image: "/ingredient-img/Licorice.png",
+          description: "Rich in anti-inflammatory & anti-microbial properties. Promotes skin brightening & anti-aging benefits.",
+        },
+        {
+          name: "Morinaga",
+          image: "/ingredient-img/Morinaga.png",
+          description: "Rich in antibacterial & nourishing properties. Controls problem skin & restores natural balance.",
+        },
+        {
+          name: "Virgin Coconut",
+          image: "/ingredient-img/Virgin-Coconut.png",
+          description: "Rich in nourishing fatty acids. Increases collagen production & intensely hydrates.",
+        },
+        {
+          name: "Watercress",
+          image: "/ingredient-img/Watercress.png",
+          description: "Rich in Vitamin C. Increases collagen production & reduces cellulite & wrinkles.",
+        }
+      ]
     },
     { 
       id: "23", 
       image: "/product-img/True_Turmeric_-_Gold_Facial_Masque_-Vitamin_C_Glow_Brightening_Treatment_-_Spa_Ceylon_Sri_Lanka-4366241.jpg", 
       title: "True Turmeric - Gold Facial Masque -Vitamin C Glow Brightening Treatment", 
       price: "1,050 LKR",
-      description: ""
+      description: "",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Licorice",
+          image: "/ingredient-img/Licorice.png",
+          description: "Rich in anti-inflammatory & anti-microbial properties. Promotes skin brightening & anti-aging benefits.",
+        },
+        {
+          name: "Virgin Coconut",
+          image: "/ingredient-img/Virgin-Coconut.png",
+          description: "Rich in nourishing fatty acids. Increases collagen production & intensely hydrates.",
+        }
+      ]
     },
     { 
       id: "23", 
       image: "/product-img/True_Turmeric_-_Vitamin_C_Glow_-_Anti-Pollution_Gel_Facial_Masque_60ml_-_Spa_Ceylon_Sri_Lanka-4366272.jpg", 
       title: "True Turmeric - Vitamin C Glow - Anti-Pollution Gel Facial Masque 60ml",
       price: "5,550 LKR",
-      description: ""
+      description: "",
+      ingredientDetails: [
+        {
+          name: "Turmeric",
+          image: "/ingredient-img/Turmeric.png",
+          description: "Rich in anti-oxidants & anti-inflammatory properties. Revives skin dull skin & enhances skin radiance.",
+        },
+        {
+          name: "Licorice",
+          image: "/ingredient-img/Licorice.png",
+          description: "Rich in anti-inflammatory & anti-microbial properties. Promotes skin brightening & anti-aging benefits.",
+        },
+        {
+          name: "Aloe Vera",
+          image: "/ingredient-img/Aloe-Vera.png",
+          description: "Hydrates & refreshes skin, treating dryness.",
+        },
+        {
+          name: "Almond",
+          image: "/ingredient-img/Almond.png",
+          description: "Rich in vitamin E, to nourish & soften skin.",
+        }
+      ]
     },
   ],
 };
