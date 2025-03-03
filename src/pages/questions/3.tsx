@@ -815,7 +815,7 @@ export default function Question3() {
                 setShowInfo(true);
               }}
             >
-              Info
+              More Details
             </button>
           </div>
         ))}
@@ -836,7 +836,7 @@ export default function Question3() {
             localStorage.removeItem("skinSubChoice");
             setSelectedSubChoice(null);
             setSkinType(null);
-            router.push("/questions/1");
+            router.push("/../");
           }}
         >
           Start a New Quiz
