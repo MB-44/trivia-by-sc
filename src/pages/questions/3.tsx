@@ -969,7 +969,7 @@ export default function Question3() {
                 setShowInfo(true);
               }}
             >
-              Check on the Ingredients
+              Ingredients
             </button>
           </div>
         ))}
