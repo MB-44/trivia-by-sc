@@ -1,33 +1,15 @@
-/* .page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vh;
-  height: 100vw;
-  overflow-y: auto;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: "Goudy Old Style";
-  
-  /* transform: translate(-50%, -50%) rotate(90deg);
-  transform-origin: center center; *
-} */
 
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Goudy Old Style";
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  gap: 32px;
+  font-family: "Goudy Old Style";
+  min-height: 100vh;
+  padding: 80px;
+  text-align: center;
 }
-
 
 @font-face {
   font-family: "TrajanProBold";
@@ -82,13 +64,12 @@
   font-family: "Goudy Old Style";
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 16px;
   margin-bottom: 24px;
 }
 
 .optionButton {
-  font-family: "Goudy Old Style";  
+  font-family: "Goudy Old Style";
   padding: 12px 24px;
   background-color: #fff;
   border: 2px solid #000;
@@ -105,12 +86,12 @@
 }
 
 .navigation {
-  font-family: "Goudy Old Style";  
+  font-family: "Goudy Old Style";
   margin-top: 24px;
 }
 
 .backButton {
-  font-family: "Goudy Old Style";  
+  font-family: "Goudy Old Style";
   background-color: transparent;
   border: none;
   color: #38393a;
@@ -133,12 +114,13 @@
   margin: 0 auto 24px;
   max-width: 1200px;
   justify-items: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  /* grid-template-columns: 1fr; */
-  /* width: 20%; */
-  /* gap: 10px; */
-  /* margin-bottom: 24px; */
-  /* justify-content: center; */
+}
+
+@media (max-width: 768px) {
+  .productsGrid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 
 .productCard {
@@ -185,6 +167,7 @@
 }
 
 .infoButton {
+  font-family: "Goudy Old Style";
   padding: 10px 20px;
   border: 1px solid black;
   background-color: #ececec;
@@ -209,7 +192,7 @@
   background-color: #f8c85f;
   color: #242323;
   border: none;
-  font-family: "Goudy Old Style";  
+  font-family: "Goudy Old Style";
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -243,7 +226,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url("/bgs/test-bg.jpg"); */
   background: rgba(42, 40, 40, 0.5);
   display: flex;
   justify-content: center;
