@@ -1,16 +1,25 @@
-
+/* Updated .page rule to rotate the entire page 90° */
 .page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vh;       /* viewport height becomes new width */
+  height: 100vw;      /* viewport width becomes new height */
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center center;
+  overflow: auto;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 32px;
   font-family: "Goudy Old Style";
-  min-height: 100vh;
   padding: 80px;
   text-align: center;
 }
 
+/* -------------------- Font Definitions -------------------- */
 @font-face {
   font-family: "TrajanProBold";
   src: url("/fonts/TrajanPro3Bold.ttf") format("truetype");
@@ -41,11 +50,12 @@
 
 @font-face {
   font-family: "Goudy Old Style";
-  src: url("/font/GOUDOS.ttf") format("truetype");
+  src: url("/fonts/GOUDOS.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+/* -------------------- Headings & Text -------------------- */
 .title {
   text-align: center;
   font-size: 28px;
@@ -60,6 +70,7 @@
   color: #666;
 }
 
+/* -------------------- Options -------------------- */
 .options {
   font-family: "Goudy Old Style";
   display: flex;
@@ -85,6 +96,7 @@
   transform: scale(1.05);
 }
 
+/* -------------------- Navigation -------------------- */
 .navigation {
   font-family: "Goudy Old Style";
   margin-top: 24px;
@@ -106,6 +118,7 @@
   transform: scale(1.05);
 }
 
+/* -------------------- Products Grid -------------------- */
 .productsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -123,6 +136,7 @@
   }
 }
 
+/* -------------------- Product Card -------------------- */
 .productCard {
   font-family: "TrajanProBold";
   border: 1px solid #ddd;
@@ -166,6 +180,7 @@
   color: #555;
 }
 
+/* -------------------- Info Button -------------------- */
 .infoButton {
   font-family: "Goudy Old Style";
   padding: 10px 20px;
@@ -183,6 +198,7 @@
   transform: scale(1.05);
 }
 
+/* -------------------- Start Quiz Button -------------------- */
 .startQuizButtonContainer {
   margin-top: 24px;
 }
@@ -204,6 +220,7 @@
   background-color: #f5cb72;
 }
 
+/* -------------------- Loading Spinner -------------------- */
 .loadingSpinner {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #38393a;
@@ -220,13 +237,14 @@
   }
 }
 
+/* -------------------- Modal -------------------- */
 .cartModal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(42, 40, 40, 0.5);
+  background: rgba(242, 239, 239, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,9 +319,11 @@
   }
 }
 
+/* -------------------- Product Details -------------------- */
 .productDescription {
   font-size: 16px;
   color: #555;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 
@@ -313,37 +333,38 @@
   margin-bottom: 12px;
 }
 
+/* -------------------- Ingredient Tiles -------------------- */
 .ingredientList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 10px;
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .ingredientItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 .ingredientImage {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 4px;
-}
-
-.ingredientDetails {
-  flex: 1;
+  margin-bottom: 8px;
 }
 
 .ingredientName {
   font-size: 16px;
   font-weight: bold;
   color: #333;
+  margin-bottom: 4px;
 }
 
 .ingredientDescription {

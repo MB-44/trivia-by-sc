@@ -969,7 +969,7 @@ export default function Question3() {
                 setShowInfo(true);
               }}
             >
-              More Details
+              Check on the Ingredients
             </button>
           </div>
         ))}
@@ -993,7 +993,7 @@ export default function Question3() {
             router.push("/../");
           }}
         >
-          Start a New Quiz
+          Start Over
         </button>
       </div>
       {showInfo && selectedProduct && (
