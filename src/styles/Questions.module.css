@@ -1,10 +1,9 @@
-/* Updated .page rule to rotate the entire page 90° */
 .page {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vh;       /* viewport height becomes new width */
-  height: 100vw;      /* viewport width becomes new height */
+  width: 100vh;
+  height: 100vw;
   transform: translate(-50%, -50%) rotate(90deg);
   transform-origin: center center;
   overflow: auto;
@@ -17,35 +16,6 @@
   font-family: "Goudy Old Style";
   padding: 80px;
   text-align: center;
-}
-
-/* -------------------- Font Definitions -------------------- */
-@font-face {
-  font-family: "TrajanProBold";
-  src: url("/fonts/TrajanPro3Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TrajanProRegular";
-  src: url("/fonts/TrajanPro3Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TrajanProSemi";
-  src: url("/fonts/TrajanPro3SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TrajanProExtraLight";
-  src: url("/fonts/TrajanPro3ExtraLight.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {

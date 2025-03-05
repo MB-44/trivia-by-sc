@@ -1,5 +1,6 @@
 import { useRouter } from "next/navigation";
 import styles from "@/styles/Questions.module.css";
+import BackgroundVideo from "@/components/BackgroundVideo";
 
 export default function Question1() {
   const router = useRouter();
@@ -16,6 +17,7 @@ export default function Question1() {
 
   return (
     <div className={styles.page}>
+      <BackgroundVideo src="/bgs/test.mp4"/>
       <h1 className={styles.title}>What’s your age group?</h1>
       <div className={styles.options}>
         <button className={styles.optionButton} onClick={() => handleOptionClick("Below 24")}>
