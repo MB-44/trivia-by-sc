@@ -39,11 +39,11 @@ Follow the instructions below to run the project locally on your machine.
 
 1. **Clone the repository** (or download the ZIP file and extract):
    ```bash
-   git clone https://github.com/<your-username>/spa-ceylon-quiz-app.git
+   git clone https://github.com/mb-44/trivia-by-sc.git
    ```
 2. **Navigate to the project directory**:
    ```bash
-   cd spa-ceylon-quiz-app
+   cd trivia-by-sc
    ```
 3. **Install dependencies**:
    ```bash
